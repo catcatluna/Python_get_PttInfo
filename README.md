@@ -1,5 +1,5 @@
 # Python_get_PttInfo
-[python] 使用內建urllib函式庫及BeautifulSoup 獲得ptt 電影版標題資訊
+[python] 使用內建urllib函式庫及BeautifulSoup 獲得ptt 電影版標題資訊並存至txt檔案中
 
 ## Code 說明
 ### import
@@ -12,8 +12,12 @@ python 內建函式庫 用來獲得網頁資料
 ```
 import bs4
 ```  
-bs4 是用來方便解析HTML原始碼 取得我們想要的資訊
-
+bs4 是用來方便解析HTML原始碼 取得我們想要的資訊  
+### 存入txt檔案  
+```
+with open("titledata.txt",mode="w",encoding="utf-8") as file:
+    file.write(title.a.string+"\n")
+```  
 ### Headers 
 * User-Agent  
 ```
