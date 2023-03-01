@@ -17,8 +17,9 @@ request = req.Request(url, headers={
 })
 ```
 開發人員工具 (或是直接按F12) - Network - 重新開啟網頁後 找到index.html - 尋找到Request Headers 的user-agent   
-為了要向目標網頁模擬我們使用的裝置 所以要將代表裝置的user-agent代入參數 這樣才不會被網頁拒絕
-![image](https://user-images.githubusercontent.com/107610680/222087210-6a58fb4f-88f0-4b08-b502-0b7664a99e02.png)
+為了要向目標網頁模擬我們使用的裝置 所以要將代表裝置的user-agent代入參數 這樣才不會被網頁拒絕  
+<img src="https://user-images.githubusercontent.com/107610680/222087210-6a58fb4f-88f0-4b08-b502-0b7664a99e02.png" width="80%">
+
 
 
 
