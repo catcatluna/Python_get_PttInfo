@@ -1,5 +1,5 @@
 # Python_get_PttInfo
-[python] 使用內建urllib函式庫 獲得ptt 電影版資訊
+[python] 使用內建urllib函式庫及BeautifulSoup 獲得ptt 電影版標題資訊
 
 ## Code 說明
 ### import
@@ -7,8 +7,13 @@
 ```
 import urllib.request as request
 ```
-python 內建函式庫 用來獲得網頁資料
-  
+python 內建函式庫 用來獲得網頁資料  
+* BeautifulSoup
+```
+import bs4
+```  
+bs4 是用來方便解析HTML原始碼 取得我們想要的資訊
+
 ### Headers 
 * User-Agent  
 ```
