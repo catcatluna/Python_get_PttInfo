@@ -16,6 +16,9 @@ root = bs4.BeautifulSoup(data, "html.parser")
 
 # 文章標題是在class=title div標籤 中的 a標籤中的文字
 titles = root.find_all("div", class_="title") # 尋找class="title" 的 所有 div 標籤 回傳一個列表
-for title in titles:
-    if title.a != None: # 有些標題已經被刪除 要先檢查
-        print(title.a.string) # 印出標題文字
+# 將標題存至txt檔案
+with open("titledata.txt",mode="w",encoding="utf-8") as file:
+    for title in titles:
+        if title.a != None: # 有些標題已經被刪除 要先檢查
+            file.write(title.a.string+"\n")
+
