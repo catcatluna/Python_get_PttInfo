@@ -19,6 +19,18 @@ with open("titledata.txt",mode="w",encoding="utf-8") as file:
     file.write(title.a.string+"\n")
 ```  
 mode w是覆蓋寫入, a是繼續寫入(如果原本檔案就有資料就會繼續寫下去)
+
+### 解析HTML
+* 透過text文字取得 a標籤中的href
+``` 
+lastPageHref = thisPageHtml.find("a", string="‹ 上頁")
+    url = "https://www.ptt.cc"+lastPageHref["href"]
+```   
+* 尋找符合class的所有目標
+``` 
+titles = root.find_all("div", class_="title")
+``` 
+
 ### Headers 
 * User-Agent  
 ```
