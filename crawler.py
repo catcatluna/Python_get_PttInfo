@@ -1,9 +1,10 @@
 import urllib.request as req
 import bs4
-# 目標網址 ptt 電影版 (取得前5頁的資訊)
-url = "https://www.ptt.cc/bbs/movie/index.html"
+# 目標網址 ptt 八卦版(需要滿18歲) (取得前5頁的資訊)
+url = "https://www.ptt.cc/bbs/Gossiping/index.html"
 # header 資訊
 header = {
+    "cookie":"over18=1",
     "User-Agent":"Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Mobile Safari/537.36"
 }
 data = ""
