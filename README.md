@@ -46,4 +46,4 @@ request = req.Request(url, headers={
 
 
 ## 資料來源
-[Python 網路連線程式、公開資料串接 By 彭彭](Python 網路爬蟲 Web Crawler 基本教學 By 彭彭)
+[Python 網路爬蟲 Web Crawler 基本教學 By 彭彭](https://www.youtube.com/watch?v=9Z9xKWfNo7k)
